@@ -1,0 +1,37 @@
+.app__findus-contant-title {
+  padding: 1rem 0 2rem 0;
+}
+.app__findus-contant-subtitle {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-size: 24px;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+.app__findus-contant-button {
+  padding: 1rem 0;
+}
+.app_findus-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app_findus-image img {
+  width: 80%;
+}
+@media screen and (min-width: 2000px) {
+  .app_findus-image img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .app__findus {
+    flex-direction: column;
+  }
+  .app_findus-image {
+    margin: 2rem 0;
+  }
+  .app_findus-image img {
+    width: 100%;
+  }
+}

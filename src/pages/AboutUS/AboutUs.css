@@ -1,0 +1,16 @@
+.app__aboutUs {
+  height: 100%;
+  padding-bottom: 4rem;
+}
+.app__aboutUs-contant {
+  margin: 4rem;
+  padding: 2rem;
+  background: var(--color-black);
+  border: 1px dashed var(--color-golden);
+  border-radius: 5px;
+  text-align: justify;
+}
+.app__aboutUs-contant h1 {
+  text-align: center;
+  padding-bottom: 2rem;
+}

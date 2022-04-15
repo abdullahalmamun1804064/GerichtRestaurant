@@ -1,0 +1,53 @@
+.app__chef {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.chef-image-section {
+  padding: 2rem;
+}
+.chef-image-section img {
+  width: 100%;
+}
+.chef-about {
+  padding: 2rem;
+}
+
+.chef-about-qutatin {
+  padding: 2rem 0;
+}
+
+.chef-about-qutatin-img {
+  display: flex;
+  align-items: flex-end;
+}
+.chef-about-qutatin-img img {
+  width: 60px;
+  padding: 0 1rem 1rem 0;
+}
+
+.chef-sign {
+  padding: 2rem 0;
+}
+.chef-name {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-size: 25px;
+  letter-spacing: 0.1rem;
+}
+.chef-sign img {
+  padding: 1rem 0;
+  width: 150px;
+}
+
+@media screen and (min-width: 2000px) {
+  .chef-image-section img {
+    width: 720px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .app__chef {
+    display: block;
+  }
+}

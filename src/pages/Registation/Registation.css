@@ -1,0 +1,106 @@
+.app__registation {
+  height: 100%;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app__registation-contant {
+  margin-top: 6rem;
+  align-items: center;
+  max-width: 400px;
+  background-color: var(--color-black);
+  border: 1px solid var(--color-golden);
+  border-radius: 5px;
+  padding: 2rem;
+}
+.app__registation-contant h1 {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+label {
+  font-family: var(--font-base);
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  padding-right: 1rem;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.registation_name,
+.registation_email,
+.registation_password,
+.registation_mobile {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+input {
+  padding: 0.3rem;
+  background: var(--color-white);
+  border: none;
+}
+.registation_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.registation_button button {
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  width: 141px;
+  height: 44px;
+  background: var(--color-golden);
+  font-family: var(--font-base);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  border-radius: 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.alreay-has-account {
+  display: flex;
+  justify-content: flex-end;
+}
+.alreay-has-account p {
+  color: var(--color-white);
+  align-items: flex-end;
+  padding-right: 0.2rem;
+}
+.alreay-has-account a {
+  color: var(--color-golden);
+}
+
+@media screen and (max-width: 400px) {
+  .registation_button button {
+    font-size: 14px;
+  }
+  .registation_name,
+  .registation_email,
+  .registation_password,
+  .registation_mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .alreay-has-account {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    margin-bottom: 0.8rem;
+  }
+}

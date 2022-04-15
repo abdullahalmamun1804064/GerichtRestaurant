@@ -1,0 +1,35 @@
+.app__menu-itme {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.app__menu-itme-head {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu__item-name {
+  width: 100%;
+  margin-right: 4rem;
+}
+.menu__item-name p {
+  color: var(--color-golden);
+}
+.menu-item-desh {
+  width: 90px;
+  height: 1px;
+  background: var(--color-gray);
+}
+.menu__item-price {
+  padding: 0 1rem;
+}
+
+.menu__item-tag p {
+  color: var(--color-grey);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: var(--font-alt);
+}

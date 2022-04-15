@@ -1,0 +1,62 @@
+.app__header {
+  display: flex;
+  background: var(--color-black);
+  padding: 4rem 0;
+}
+.app__header__info {
+  padding: 6rem 4rem;
+}
+.p_info {
+  padding: 2rem 0;
+}
+.heading__info__title {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: var(--color-golden);
+}
+.app__header__img img {
+  width: 80%;
+}
+
+@media screen and (min-width: 2000px) {
+  .heading__info__title {
+    font-size: 180px;
+    line-height: 210px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .heading__info__title {
+    font-size: 90px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .heading__info__title {
+    font-size: 70px;
+    line-height: 87px;
+  }
+  .app__header {
+    display: block;
+    align-items: center;
+  }
+  .app__header__img img {
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .heading__info__title {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .app__header {
+    display: block;
+    align-items: center;
+  }
+  .app__header__img img {
+    margin-left: 10%;
+  }
+}

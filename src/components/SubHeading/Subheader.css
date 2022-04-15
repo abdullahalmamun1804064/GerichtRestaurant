@@ -1,0 +1,12 @@
+.subhedding {
+  font-family: var(--font-base);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  /* identical to box height, or 30px */
+  color: var(--color-white);
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+}

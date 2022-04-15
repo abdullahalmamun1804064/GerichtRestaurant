@@ -1,0 +1,110 @@
+.app__navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--color-black);
+}
+.app__logo {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+.app__logo img {
+  width: 150px;
+}
+.app__manu {
+  display: flex;
+}
+.app__manu li {
+  list-style: none;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.app__manu li :hover {
+  color: var(--color-grey);
+}
+.app__logingManue {
+  display: flex;
+  justify-self: flex-end;
+}
+.app__logingManue a {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+.app__logingManue a:hover {
+  border-bottom: 1px solid var(--color-golden);
+}
+.app__logingManue div {
+  height: 30px;
+  width: 1px;
+  background: var(--color-grey);
+}
+
+.app__smallScreenDevice {
+  display: none;
+}
+.app__smallScreenOverly {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--color-black);
+  transition: 0.5s ease;
+  flex-direction: column;
+  z-index: 5;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app__smallScreenOverly .overlay__close {
+  font-size: 27px;
+  color: var(--color-golden);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.app__smallScreenManu {
+  list-style: none;
+}
+.app__smallScreenManu li a {
+  margin: 1rem;
+  color: var(--color-golden);
+  text-align: center;
+  font-family: var(--font-base);
+}
+.app__smallScreenManu li a:hover {
+  color: var(--color-white);
+}
+
+@media screen and(min-width:2000px) {
+  .app__logo img {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__manu {
+    display: none;
+  }
+  .app__smallScreenDevice {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__navbar {
+    padding: 1rem;
+  }
+  .app__logo img {
+    width: 110px;
+  }
+  .app__logingManue {
+    display: none;
+  }
+}
